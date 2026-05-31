@@ -24,7 +24,7 @@ class ProcessManager:
     _lock = threading.RLock()  # Reentrant lock to prevent deadlocks during nested cleanup
 
     # Maximum number of concurrent processes
-    MAX_PROCESSES = 100
+    MAX_PROCESSES = 500
 
     def __new__(cls):
         if cls._instance is None:
